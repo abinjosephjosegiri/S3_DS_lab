@@ -2,7 +2,7 @@
 
 main()
 {
-    int i, s, n, l, u, mid, a[100];
+    int i, s, n, l, u, m, a[100];
     printf("Enter the number of elements: ");
     scanf("%d", &n);
     printf("Enter %d elements (In ascending order):\n", n);
@@ -14,19 +14,20 @@ main()
     u = n;
     while (l <= u)
     {
-        mid = (l + u) / 2;
-        if (s == a[mid])
+        m= (l + u) / 2;
+        if (s == a[m])
         {
-            printf("Element found at position %d\n", mid + 1);
+            printf("Element found at position %d\n", m + 1);
             break;
         }
-        else if (s > a[mid])
+        else if (s > a[m])
         {
-            l = mid + 1;
+            l = m + 1;
         }
-        else if (s < a[mid])
+        else if (s < a[m])
         {
-            u = mid - 1;
+            u = m - 1;
         }
+        printf("\n");
     }
 }
