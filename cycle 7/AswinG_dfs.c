@@ -16,12 +16,16 @@ void dfs(int v)
 void main()
 {
 	int i, j;
-	printf("Enter the no of nodes : ");
+	printf("Enter the number
+
+of nodes : ");
 	scanf("%d", &n);
-	printf("Enter adjecency matrix of the graph\n");
+	printf("Enter adjacency matrix of the graph\n");
 	for (i = 0; i < n; i++)
 		for (j = 0; j < n; j++)
 			scanf("%d", &adjmat[i][j]);
 	dfs(0);
 	printf("\n");
+	
+	
 }
