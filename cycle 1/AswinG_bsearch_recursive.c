@@ -35,5 +35,5 @@ void main()
     l = 0;
     u = n;
     if (!bsearch(a, l, u, s))
-        printf("Element not found\n");
+        printf("Element not found\n:");
 }
